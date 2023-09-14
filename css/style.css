@@ -29,7 +29,7 @@ ul {
   list-style-type: none;
 }
 
-.white-link, .hover-white-link, header .container ul li a {
+.white-link, .downloadCvButton, .hero .container .left a, .hover-white-link, header .container ul li a {
   color: white;
   text-decoration: none;
 }
@@ -70,6 +70,10 @@ ul {
   padding-bottom: 2rem !important;
 }
 
+.w-50 {
+  width: 50%;
+}
+
 .github-btn {
   border: 1px solid rgb(133, 76, 230);
   border-radius: 50px;
@@ -83,6 +87,20 @@ ul {
 .github-btn:hover {
   color: white;
   background-color: rgb(133, 76, 230);
+}
+
+.downloadCvButton, .hero .container .left a {
+  background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+  box-shadow: rgb(31, 38, 52) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
+  transition: all 0.2s ease-in-out 0s !important;
+  padding: 15px 50px;
+  transition: 0.3s;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.downloadCvButton:hover, .hero .container .left a:hover {
+  transform: scale(1.2, 1.2);
 }
 
 #checkbox {
@@ -175,6 +193,7 @@ header {
   background-color: rgb(25, 25, 36);
   padding: 10px 0;
   position: fixed;
+  z-index: 9;
   width: 100%;
   left: 0;
   top: 0;
@@ -193,6 +212,7 @@ header .container a svg {
 }
 header .container ul li {
   padding: 0 10px;
+  font-weight: 500;
 }
 @media (min-width: 992px) {
   .links {
@@ -254,9 +274,61 @@ header .container ul li {
     margin: 10px 0;
   }
 }
-.hero .container h1 {
+.hero {
+  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%);
+          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%);
+  background: rgb(25, 25, 36);
+  overflow: hidden;
+}
+.hero .container .left h1 {
   font-size: 50px;
   font-weight: 700;
   color: rgb(242, 243, 244);
   line-height: 68px;
+}
+.hero .container .left h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(242, 243, 244);
+  font-family: Poppins, sans-serif;
+}
+.hero .container .left h2 span {
+  color: rgb(133, 76, 230);
+}
+.hero .container .left p {
+  font-size: 20px;
+  color: rgba(242, 243, 244, 0.584);
+  line-height: 32px;
+  margin-top: 10px;
+}
+.hero .container .left a {
+  display: block;
+  margin-top: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero .container .right {
+  position: relative;
+}
+.hero .container .right .image {
+  position: absolute;
+  z-index: 8;
+  left: 50%;
+  transform: translate(-50%);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.hero .container .right .image img {
+  width: 100%;
+}
+.hero .container .right svg {
+  position: absolute;
+  top: -5rem;
+}
+
+.skills {
+  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
 }/*# sourceMappingURL=style.css.map */

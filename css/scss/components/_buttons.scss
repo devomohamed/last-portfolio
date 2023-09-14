@@ -12,6 +12,21 @@
   }
 }
 
+.downloadCvButton{
+  @extend .white-link;
+  background: -webkit-linear-gradient(225deg, rgb(132, 0, 255) 0%, rgb(230, 0, 255) 100%);
+  box-shadow: rgb(31, 38, 52) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
+  transition: all 0.2s ease-in-out 0s !important;
+  padding: 15px 50px;
+  transition: $delay-transition-3;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  &:hover{
+    transform: scale(1.2,1.2);
+  }
+}
+
 #checkbox {
   display: none;
 }

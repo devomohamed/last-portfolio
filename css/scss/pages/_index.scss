@@ -1,8 +1,63 @@
 .hero{
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%);
+  background: rgb(25, 25, 36);
+  overflow: hidden;
   .container{
-    h1{
-      @include textStyle(50px,700,$white_color-1);
-      line-height: 68px;
+    .left{
+      h1{
+        @include textStyle(50px,700,$white_color-1);
+        line-height: 68px;
+      }
+      h2{
+        @include textStyle(30px,500,$white_color-1);
+        font-family: Poppins,sans-serif;
+        span{
+          color: $gradient_color-1;
+        }
+      }
+      p{
+        font-size: 20px;
+        color: $white_color-2;
+        line-height: 32px;
+        margin-top: 10px;
+      }
+      a{
+        display: block;
+        margin-top: 15px;
+        width: fit-content;
+        @extend .downloadCvButton;
+      }
+    }
+    .right{
+      position: relative;
+      .image{
+        position: absolute;
+        z-index: 8;
+        left: 50%;
+        transform: translate(-50%);
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          width: 100%;
+        }
+      }
+      svg{
+        position: absolute;
+        top: -5rem;
+      }
+    }
+  }
+}
+
+
+.skills{
+  //background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+  .container{
+    .top{
+
     }
   }
 }

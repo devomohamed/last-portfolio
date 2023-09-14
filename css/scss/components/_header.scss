@@ -2,6 +2,7 @@ header{
   background-color: rgb(25, 25, 36);
   padding: 10px 0;
   position: fixed;
+  z-index: 9;
   width: 100%;
   left: 0;
   top: 0;
@@ -20,6 +21,7 @@ header{
     ul{
       li{
         padding: 0 10px;
+        font-weight: 500;
         a{
           @extend .hover-white-link;
         }
