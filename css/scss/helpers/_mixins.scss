@@ -1,0 +1,57 @@
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  
+    @if $breakpoint == largeScreen {    
+      @media (min-width: 992px) {
+      @content;
+    }
+  }
+    @if $breakpoint == tablet {    
+      @media (min-width: 577px) and (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media (min-width: 0px) and (max-width: 576px) {
+      @content;
+    }
+  }
+}
+
+@mixin menu {
+  header .container .right-side{
+    transition: $delay-transition-3;
+    height: 0px;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+
+    &.active{
+      visibility: visible;
+      flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    background-color: black;
+    top: calc(100% + 10px);
+    padding: 30px 0;
+    ul{
+      flex-direction: column;
+      li{
+        margin: 10px 0;
+      }
+    }
+    }
+  }
+}
+
+
+@mixin textStyle($fs, $fW, $color){
+  font: {
+    size: $fs;
+    weight:$fW;
+  }
+  color: $color;
+}
+

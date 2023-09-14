@@ -1,0 +1,8 @@
+.hero{
+  .container{
+    h1{
+      @include textStyle(50px,700,$white_color-1);
+      line-height: 68px;
+    }
+  }
+}

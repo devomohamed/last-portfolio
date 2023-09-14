@@ -1,0 +1,16 @@
+//Import Helpers
+@import "./scss/helpers/colors";
+@import "./scss/helpers/variables";
+@import "./scss/helpers/functions";
+@import "./scss/helpers/global-rules";
+@import "./scss/helpers/mixins";
+@import "./scss/helpers/framework";
+
+
+// components 
+@import "./scss/components/buttons";
+@import "./scss/components/header";
+@import "./scss/components/footer";
+
+// pages
+@import "./scss/pages/index";
