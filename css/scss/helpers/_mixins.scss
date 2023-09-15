@@ -16,6 +16,11 @@
       @content;
     }
   }
+  @if $breakpoint == smallScreen {
+    @media (min-width: 0px) and (max-width: 992px) {
+      @content;
+    }
+  }
 }
 
 @mixin menu {

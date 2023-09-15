@@ -2,8 +2,8 @@
 @import "./scss/helpers/colors";
 @import "./scss/helpers/variables";
 @import "./scss/helpers/functions";
-@import "./scss/helpers/global-rules";
 @import "./scss/helpers/mixins";
+@import "./scss/helpers/global-rules";
 @import "./scss/helpers/framework";
 
 
@@ -11,6 +11,9 @@
 @import "./scss/components/buttons";
 @import "./scss/components/header";
 @import "./scss/components/footer";
+@import "./scss/components/containerPackages";
+@import "./scss/components/skill";
+@import "./scss/components/experience";
 
 // pages
 @import "./scss/pages/index";
