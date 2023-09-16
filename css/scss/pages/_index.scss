@@ -74,6 +74,29 @@ section.experience{
     clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
 }
 
+section.Projects{
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 100% 98%, 0px 100%);
+  background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+  .container{
+    // text-align: center;
+    .show-more{
+      display: block;
+      margin-top: 15px;
+      width: fit-content;
+      @extend .downloadCvButton;
+      margin: 1.5rem auto;
+    }
+  }
+}
+
+section.education{
+  background: none;
+}
+section.contact{
+  background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+    width: 100%;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+}
 
 
 
