@@ -19,3 +19,5 @@ Technologies used in the project:
 *   HTML
 *   CSS(SCSS)
 *   Javascript
+*   EmailJS
+*   Typewriter
