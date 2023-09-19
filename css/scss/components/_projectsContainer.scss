@@ -95,3 +95,16 @@
   }
   
 }
+
+@include devices(mobile){
+  .projects-container{
+    .links-projects{
+      li{
+        font-size: 10px;
+      }
+    }
+    .projects-cards{
+      grid-template-columns: repeat(auto-fill, 290px);
+    }
+  }
+}

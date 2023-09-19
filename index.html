@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Mohamed Sabry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/WhatsApp Image 2021-06-28 at 2.03.46 AM.jpeg">
 </head>
 <body>
+
+  <!-- Start Loader -->
+  <!--------------------------------------------------------------------------------------------------------------------- -->
+  <div class="loader-overlay">
+    <span class="loader"></span>
+  </div>
+  <!--------------------------------------------------------------------------------------------------------------------- -->
+  <!-- End Loader -->
+
+
   <!-- Start Header -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
   <header>
     <div class="container d-flex justify-content-between flex-wrap align-center">
-      <a href="" class="logo d-flex align-center">
+      <a href="index.html" class="logo d-flex align-center">
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="3rem" width="3rem" xmlns="http://www.w3.org/2000/svg"><path d="M13.632 5.289c-0.613 0.129-1.823 0.565-2.662 0.984-1.275 0.613-1.759 0.968-2.921 2.13s-1.517 1.646-2.13 2.921c-1.646 3.373-1.646 6.6 0 10.005 0.613 1.291 0.952 1.759 2.13 2.921 1.178 1.178 1.63 1.501 2.921 2.13 1.969 0.936 2.921 1.162 5.002 1.162s3.034-0.226 5.002-1.162c1.275-0.613 1.727-0.952 2.921-2.13 1.178-1.194 1.517-1.646 2.13-2.921 0.774-1.63 1-2.388 1.178-4.002l0.113-1h-3.195l-0.21 1.243c-1.017 6.471-8.907 9.069-13.587 4.47-3.792-3.712-2.969-10.005 1.678-12.732 0.871-0.516 2.63-1.049 3.437-1.049h0.532v-3.227l-0.597 0.016c-0.339 0-1.113 0.113-1.743 0.242zM14.213 9.645c-3.421 0.92-5.648 4.325-5.067 7.745 0.662 3.792 4.212 6.39 7.891 5.761 3.776-0.645 6.39-4.212 5.761-7.859-0.71-4.115-4.647-6.713-8.585-5.648z"></path></svg>
         <span class="logo-text">Portfolio</span>
       </a>
-      <div class="right-side d-flex justify-content-between align-center  flex-wrap">
+      <div id="header-menu" class="right-side d-flex justify-content-between align-center  flex-wrap">
         <ul class="links d-flex  flex-wrap">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Education</a></li>
+          <li><a href="#hero">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
         </ul>
         <a target="_blank" href="https://github.com/devomohamed" class="github-btn">Github Profile</a>
       </div>
@@ -53,7 +65,7 @@
 
   <!-- Start Hero -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
-  <section class="hero py-2">
+  <section id="hero" class="hero py-2">
     <div class="container">
       <div class="left w-50">
         <h1>Hi, Iam <br> Mohamed Sabry</h1>
@@ -62,7 +74,7 @@
         good. obsessed with constantly expanding my coding set, Seek a progressive organization that provides an
         opportunity to capitalize on my technical skills.
         </p>
-        <a href="#">Download Cv</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1ytF7mc-UvRMVhy2SZpgK5GHWMyBoiG2w/view?usp=sharing">Download Cv</a>
       </div>
       <div class="right w-50">
         <div class="image">
@@ -77,7 +89,7 @@
 
   <!-- Start Skills -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
-  <section class="skills py-2">
+  <section id="skills" class="skills py-2">
     <div class="container">
       <div class="top text-center">
         <h3 class="title">Skills</h3>
@@ -141,7 +153,7 @@
 
   <!-- Start Experience -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
-  <section class="experience py-2">
+  <section id="experience" class="experience py-2">
     <div class="container">
       <div class="top text-center">
         <h3 class="title">Experience</h3>
@@ -199,7 +211,7 @@
 
   <!-- Start Projects -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
-  <section class="Projects py-2">
+  <section id="projects" class="Projects py-2">
     <div class="container">
       <div class="top text-center">
         <h3 class="title">Projects</h3>
@@ -207,10 +219,10 @@
       </div>
       <div class="projects-container">
         <ul class="links-projects">
-          <li class="active">All</li>
-          <li>Angular</li>
-          <li>Vanilla Javascript</li>
-          <li>Companies Tasks</li>
+          <li class="active" data-filter="all">All</li>
+          <li data-filter="angular">Angular</li>
+          <li data-filter="vanilla">Vanilla Javascript</li>
+          <li data-filter="companies">Companies Tasks</li>
         </ul>
         <div class="projects-cards">
           <div class="project">
@@ -251,7 +263,7 @@
         </div>
       </div>
       <div class="button text-center">
-        <a class="show-more" href="#">Show More</a>
+        <a class="show-more" href="projects.html">Show More</a>
       </div>
     </div>
   </section>
@@ -260,10 +272,10 @@
 
   <!-- Start Education -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
-  <section class="education experience py-2">
+  <section id="education" class="education experience py-2">
     <div class="container">
       <div class="top text-center">
-        <h3 class="title">Experience</h3>
+        <h3 class="title">Education</h3>
         <p>My work experience as a software engineer and working on different companies and projects.</p>
       </div>
       <div class="container-experience">
@@ -318,7 +330,7 @@
 
   <!-- Start Contact -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
-  <section class="contact py-2">
+  <section id="contact" class="contact py-2">
     <div class="container">
       <div class="top text-center">
         <h3 class="title">Contact</h3>
@@ -346,11 +358,11 @@
     <div class="container">
       <h2>Mohamed Sabry</h2>
       <ul class="links-footer flex-wrap">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Education</a></li>
+        <li><a href="#hero">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
       </ul>
       <ul class="social-links flex-wrap">
         <li><a target="_blank" href="https://www.facebook.com/mohammed.sabry.31521301"><i class="fa-brands fa-lg fa-facebook-f" style="color: #ffffff;"></i></a></li>
@@ -369,7 +381,11 @@
   <!-- Start Scripts -->
   <!--------------------------------------------------------------------------------------------------------------------- -->
   <script type="application/javascript" src="./node_modules/typewriter-effect/dist/core.js"></script>
+  <script src="./node_modules/@emailjs/browser/dist/email.min.js"></script>
+  <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script src="./js/index.js"></script>
   <script src="./js/app.js"></script>
+  
   <!--------------------------------------------------------------------------------------------------------------------- -->
   <!-- End Scripts -->
 </body>

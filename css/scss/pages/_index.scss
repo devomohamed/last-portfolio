@@ -53,6 +53,41 @@
   }
 }
 
+@include devices(largeScreen){
+  .hero .right {
+    
+  }
+  .hero .left {
+
+  }
+}
+
+@include devices(tablet){
+
+}
+@include devices(mobile){
+  .hero .container .right {
+    height: fit-content;
+    .image{
+      width: 250px;
+      height: 250px;
+    }
+    svg{
+      top: 4rem;
+    }
+  }
+  .hero .left {
+    h1{
+      @include textStyle(35px,600,$white_color-1);
+        line-height: 45px;
+    }
+    .type-writer{
+      font-size: 25px;
+    }
+  }
+
+}
+
 
 .skills{
   //background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);

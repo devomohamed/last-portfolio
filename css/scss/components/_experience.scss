@@ -4,6 +4,11 @@
     justify-content: center;
     gap: 1.5rem;
   .experience{
+    transition: .3s;
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+      transform: translateY(-5px);
+    }
     &.left-bulit{
       &::after{
         content: "";

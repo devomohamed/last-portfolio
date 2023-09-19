@@ -36,9 +36,6 @@ header{
   }
 }
 
-@include devices(tablet){
-  @include menu;
-}
-@include devices(mobile){
+@include devices(smallScreen){
   @include menu;
 }

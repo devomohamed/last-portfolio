@@ -1,15 +1,15 @@
-var app = document.querySelector('.type-writer');
+let burgerMenuBtn = document.querySelector('label.toggle');
+let menuHeader = document.querySelector('#header-menu');
+burgerMenuBtn.addEventListener('click',()=>{
+    menuHeader.classList.toggle('active')
+})
 
-var typewriter = new Typewriter(app, {
-    loop: true
-});
-
-typewriter.typeString('Frontend Developer (Angular)')
-    .pauseFor(2500)
-    .deleteAll()
-    // .typeString('Backend Developer (Dotnet)')
-    // .pauseFor(2500)
-    // .deleteAll()
-    // .typeString('Fullstack (Angular, Dotnet)')
-    // .pauseFor(2500)
-    .start();
+// Loader 
+let loader = document.querySelector('.loader-overlay')
+document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+        setTimeout(() => {
+            loader.remove()
+        }, 1);
+    }
+};

@@ -1,0 +1,9 @@
+.popup-overlay{
+  width: 100%;
+  position: fixed;
+  // height: fit-content;
+  height: 100vh;
+  padding: 10px;
+  background-color: red;
+  z-index: 100;
+}
