@@ -64,6 +64,9 @@ let skills = [
       {name:"Git & Github",image:"../images/icons/html5-badge-h-solo.png"},
       {name:"NPM",image:"../images/icons/html5-badge-h-solo.png"},
       {name:"Json & Ajax",image:"../images/icons/html5-badge-h-solo.png"},
+      {name:"Network",image:"../images/icons/html5-badge-h-solo.png"},
+      {name:"Web Security",image:"../images/icons/html5-badge-h-solo.png"},
+      
     ]
   },
 ]
@@ -480,8 +483,8 @@ function popup(project){
           <h3>${author.name}</h3>
         </div>
         <div class="right">
-          <a href="${author.github}"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
-          <a href="${author.linkedIn}"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+          <a target="_blank" href="${author.github}"><i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i></a>
+          <a target="_blank" href="${author.linkedIn}"><i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
         </div>
       </div>
       `
