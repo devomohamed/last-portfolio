@@ -113,7 +113,6 @@ section .top p {
 .github-btn {
   border: 1px solid rgb(133, 76, 230);
   border-radius: 50px;
-  height: -moz-fit-content;
   height: fit-content;
   color: rgb(133, 76, 230);
   padding: 5px 13px;
@@ -252,7 +251,6 @@ header .container ul li {
 }
 @media (min-width: 992px) {
   .links {
-    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -269,7 +267,6 @@ header .container ul li {
     background-color: #211C2B;
     box-shadow: 0px 30px 97px -53px rgba(133, 76, 230, 0.75);
     padding: 30px 0;
-    height: -moz-fit-content;
     height: fit-content;
   }
   header .container .right-side ul {
@@ -280,6 +277,7 @@ header .container ul li {
   }
   header .container .right-side.active {
     top: calc(100% + 10px);
+    text-align: center;
   }
 }
 footer .container h2 {
@@ -352,7 +350,6 @@ footer .container p {
 }
 .tool {
   display: flex;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid rgba(242, 243, 244, 0.584);
   padding: 0.7rem 1.4rem;
@@ -487,7 +484,6 @@ footer .container p {
 .projects-container .links-projects {
   display: flex;
   margin: 0 auto;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .projects-container .links-projects li {
@@ -634,7 +630,6 @@ footer .container p {
 }
 .container-contact form button {
   margin-top: 0 !important;
-  width: -moz-fit-content;
   width: fit-content;
   width: 100%;
   margin: 1.5rem auto;
@@ -759,8 +754,7 @@ footer .container p {
 .popup-overlay .project .authers > div .left img {
   width: 50px;
   height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   margin-bottom: 4px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 0px;
@@ -810,8 +804,7 @@ footer .container p {
 }
 
 .hero {
-  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%);
-          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 95%, 0px 100%);
   background: rgb(25, 25, 36);
   overflow: hidden;
 }
@@ -843,7 +836,6 @@ footer .container p {
 .hero .container .left a {
   display: block;
   margin-top: 15px;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .hero .container .right {
@@ -869,7 +861,6 @@ footer .container p {
 
 @media (min-width: 0px) and (max-width: 576px) {
   .hero .container .right {
-    height: -moz-fit-content;
     height: fit-content;
   }
   .hero .container .right .image {
@@ -890,8 +881,7 @@ footer .container p {
   }
 }
 .skills {
-  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
-          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
 }
 .skills .container .container-tools .package {
   display: flex;
@@ -900,19 +890,16 @@ footer .container p {
 section.experience {
   padding: 3rem 0;
   background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
-  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
-          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
 }
 
 section.Projects {
-  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 100% 98%, 0px 100%);
-          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 100% 98%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 100% 98%, 0px 100%);
   background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
 }
 section.Projects .container .show-more {
   display: block;
   margin-top: 15px;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 1.5rem auto;
 }
@@ -924,8 +911,7 @@ section.education {
 section.contact {
   background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
   width: 100%;
-  -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
-          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
 }
 
 @media (min-width: 0px) and (max-width: 992px) {
@@ -937,7 +923,6 @@ section.contact {
     width: 100%;
   }
   .hero .container .right {
-    height: -moz-fit-content;
     height: fit-content;
     position: unset;
     height: 350px;
@@ -961,4 +946,6 @@ section.contact {
   .hero .container .left a {
     margin: 15px auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
